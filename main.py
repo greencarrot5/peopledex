@@ -15,4 +15,4 @@ class bot(discord.Client):
         pass
 
 peopledex = bot()
-peopledex.run("NzQ5NjkyOTc3NDgzMzUwMTM3.X0vr_g.RGuitc7HD4u-XVBFk5cF8QcVXq8")
+peopledex.run(open(".env").read())
