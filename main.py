@@ -10,7 +10,7 @@ class WebSite(Thread):
     def __init__(self):
         super().__init__()
         self.app = Flask(__name__)
-        @app.route('/')
+        @self.app.route('/')
         def home():
             return "Hello world!"
     
@@ -37,4 +37,4 @@ class bot(discord.Client):
             msg.channel.send("Hello, " + str(msg.author) + "!")
 
 peopledex = bot()
-peopledex.run(open(".env").read())
+peopledex.run(open("env").read())
