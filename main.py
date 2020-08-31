@@ -17,7 +17,7 @@ class WebSite(Thread):
     def run(self):
         self.app.run()
         
-WebSite().run()
+WebSite().start()
 
 # Here starts the bot code
 import discord
